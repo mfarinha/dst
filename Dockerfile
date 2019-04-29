@@ -9,7 +9,7 @@ FROM debian:stretch-slim
 # Extract and delete archive
 RUN set -x \
 	&& apt-get update \
-	&& sudo dpkg --add-architecture i386 \
+	&& dpkg --add-architecture i386 \
 	&& apt-get install -y --no-install-recommends --no-install-suggests \
 		lib32stdc++6 \
 		lib32gcc1 \
