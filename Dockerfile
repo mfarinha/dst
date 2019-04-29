@@ -12,6 +12,7 @@ RUN set -x \
 	&& apt-get install -y --no-install-recommends --no-install-suggests \
 		lib32stdc++6 \
 		lib32gcc1 \
+		libcurl-gnutls-dev:i386 \
 		wget \
 		ca-certificates \
 	&& useradd -m steam \
