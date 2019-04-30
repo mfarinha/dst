@@ -36,7 +36,7 @@ RUN set -x \
         +quit
 
 RUN set -x \
-echo "pds-g^KU_o3FCkNjU^nKoLgoKhGhmSlY1+oq6DFhgguyWrcwUqilOiRv3buE4=" >> /home/klei/donotstarvetogether/cluster_token.txt
+echo "pds-g^KU_o3FCkNjU^nKoLgoKhGhmSlY1+oq6DFhgguyWrcwUqilOiRv3buE4=" >> ./home/klei/DoNotStarveTogether/cluster_token.txt
 
 VOLUME /home/steam/steamcmd
 
