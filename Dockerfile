@@ -35,9 +35,6 @@ RUN set -x \
         +app_update 343050 validate \
         +quit
 
-RUN set -x \
-echo "pds-g^KU_o3FCkNjU^nKoLgoKhGhmSlY1+oq6DFhgguyWrcwUqilOiRv3buE4=" >> ./home/klei/DoNotStarveTogether/cluster_token.txt
-
 VOLUME /home/steam/steamcmd
 
 # Set Entrypoint; Technically 2 steps: 1. Update server, 2. Start server
