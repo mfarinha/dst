@@ -36,7 +36,7 @@ RUN set -x \
         +quit
 
 RUN set -x \
-mkdir /home/steam/klei/DoNotStarveTogether \
+mkdir -p /home/steam/klei/DoNotStarveTogether \
 echo "pds-g^KU_o3FCkNjU^nKoLgoKhGhmSlY1+oq6DFhgguyWrcwUqilOiRv3buE4=" >> /home/steam/.klei//DoNotStarveTogether/cluster_token.txt
 
 
