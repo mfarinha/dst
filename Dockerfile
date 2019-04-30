@@ -8,9 +8,9 @@ FROM debian:stretch-slim
 # Download SteamCMD
 # Extract and delete archive
 RUN set -x \
-	&& apt-get update \
 	&& dpkg --add-architecture i386 \
-	&& apt-get install -y --no-install-recommends --no-install-suggests \
+	&& apt-get update \
+	&& apt-get install -y --no-install-recommends \
 		lib32stdc++6 \
 		libcurl4-gnutls-dev:i386 \
 		wget \
