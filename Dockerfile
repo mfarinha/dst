@@ -35,14 +35,10 @@ RUN set -x \
         +app_update 343050 validate \
         +quit
 
-RUN set -x \
-echo "pds-g^KU_o3FCkNjU^nKoLgoKhGhmSlY1+oq6DFhgguyWrcwUqilOiRv3buE4=" >> ./home/klei/DoNotStarveTogether/cluster_token.txt
-
 VOLUME /home/steam/steamcmd
 
 # Set Entrypoint; Technically 2 steps: 1. Update server, 2. Start server
-ENTRYPOINT ./home/steam/steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/steam/dst +app_update 343050 +quit && \
-        ./home/steam/dst/bin/dontstarve_dedicated_server_nullrenderer
+ENTRYPOINT ./home/steam/steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/steam/dst +app_update 343050 +quit
 
 # Expose ports
 EXPOSE 0.0.0.0:10999:10999/udp
