@@ -12,7 +12,6 @@ RUN set -x \
 	&& dpkg --add-architecture i386 \
 	&& apt-get install -y --no-install-recommends --no-install-suggests \
 		lib32stdc++6 \
-		lib32gcc1 \
 		libcurl4-gnutls-dev:i386 \
 		wget \
 		ca-certificates \
