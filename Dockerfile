@@ -39,8 +39,7 @@ VOLUME /home/steam/steamcmd
 
 # Set Entrypoint; Technically 2 steps: 1. Update server, 2. Start server
 ENTRYPOINT ./home/steam/steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/steam/dst +app_update 343050 +quit && \
-        ./home/steam/dst/bin/
-		./dontstarve_dedicated_server_nullrenderer
+        /home/steam/dst/bin/ ./dontstarve_dedicated_server_nullrenderer
 
 # Expose ports
 EXPOSE 0.0.0.0:10999:10999/udp
